@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/contactus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-kiri">
+            <p class="judul">Sistem Informasi Penjualan</p>
+        </div>
+
+        <div class='console-container'>
+            <span id='text'></span>
+            <div class='console-underscore' id='console'>&#95;</div>
+        </div>
+
+        <div class="header-kanan">
+            <button class="dropdown-button">Administrator</button>
+            <div class="dropdown-content">
+                <a href="../html/index.html">Keluar</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content-kiri">
+            <div class="menu-list">
+                <li><a href="../html/home.html"><button>Dashboard</button></a></li>
+                <li><a href="../html/managementdata.html"><button>Management Data</button></a></li>
+                <li><a href="../html/aboutus.html"><button>Tentang Kami</button></a></li>
+                <li><a href="../html/contactus.html"><button>Kontak</button></a></li>
+            </div>
+        </div>
+
+        <div class="content-kanan">
+            <div class="contact">
+                <div class="contact-wrapper">
+                    <h1>Kontak Kami</h1>
+                    
+                    <br><br>
+                    <div class="contact-list">
+                        <li>
+                            <h4><i class="fa-solid fa-location-dot"></i> Alamat Kami</h4> 
+                            <br>
+                            Jalan Kemanggisan Raya No.9
+                        </li>
+                    </div>
+                    <div class="contact-list">
+                        <li>
+                            <h4><i class="fa-brands fa-whatsapp"></i> Nomor Telepon</h4>
+                            <br>
+                            0822-9863-9876 (WhatsApp)
+                        </li>
+                    </div>
+                    <div class="contact-list">
+                        <li>
+                            <h4><i class="fa-solid fa-envelope"></i> Email</h4>
+                            <br>
+                            gudsalesteam@gmail.com
+                        </li>
+                    </div>
+                </div>
+
+                <div class="form-wrapper">
+                    <h1>Hubungi Kami</h1><br>
+                    <p>Ajukan pertanyaan Anda dengan mengisi form di bawah ini</p>
+                    <br><br><br>
+        
+                    <form id="formId">
+                             
+                        <label for="" class="label">Subjek</label><br>
+                        <input type="text" class="input" placeholder="Masukkan subjek pertanyaan" id="subjekId">
+
+                        <br><br>
+
+                        <label for="" class="label">Email</label><br>
+                        <input type="email" class="input" placeholder="Masukkan email Anda" id="emailId">
+                
+                        <br><br>
+                
+                        <label for="" class="label">Pertanyaan</label><br>
+                        <textarea class="input" placeholder="Silahkan isi pertanyaan Anda" id="questionId" cols="30" rows="10"></textarea>
+                
+                        <br><br><br>
+                
+                        <div class="button">
+                            <input type="submit" class="submitBtn" value="Kirim">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="scroll-button">
+        <i class="fa-solid fa-circle-up"></i>
+    </button>
+</body>
+<script src="../js/home.js"></script>
+<script src="../js/contactus.js"></script>
+<script src="../js/JQuery.js"></script>
+</html>

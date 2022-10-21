@@ -1,0 +1,330 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header css */
+.header{
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.judul{
+    font-weight: bold;
+    font-size: larger;
+    color: white;
+}
+
+
+/* typingtext css */
+.hidden {
+    opacity:0;
+}
+.console-container {
+    text-align:center;
+    color:white;
+}
+.console-underscore {
+    display:inline-block;
+    position:relative;
+}
+.typed-cursor{
+    opacity: 0;
+	display: none;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* scroll to top button */
+.scroll-button {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .show-btn {
+    opacity: 1 !important;
+    pointer-events: all !important;
+  }
+
+  .scroll-button i{
+      font-size: 50px;
+      color: grey;
+  }
+
+.header-kanan button{
+    color: rgb(173, 173, 173);
+    cursor: pointer;
+    background-color: rgb(27, 27, 27);
+    border: none;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.header-kanan button:hover{
+    color: white;
+    font-weight: bold;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: grey;
+}
+
+.dropdown-content a{
+    color: white;
+    padding: 10px 35px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    color: white;
+    font-weight: bolder;
+    background-color: #585858;
+}
+
+.header-kanan:hover .dropdown-content {
+    display: block;   
+}
+
+/* navbar css */
+.content{
+    width: 100%;
+    display: flex;
+}
+
+.content-kiri{
+    width: 20%;
+    background-color: rgb(27, 27, 27);
+}
+
+.menu-list{
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.menu-list button{
+    padding-left: 10px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: left;
+    cursor: pointer;
+    background-color: rgb(27, 27, 27);
+    border: none;
+    width: 100%;
+}
+
+.menu-list li{
+    list-style: none;
+}
+
+.content-kiri button{
+    text-decoration: none;
+    color: rgb(173, 173, 173);
+    font-size: larger;
+}
+
+.content-kiri button:hover{
+    color: white;
+    font-weight: bolder;
+    background-color: black;
+}
+
+
+/* dashboard css */
+.content-kanan{
+    width: 80%;
+}
+
+.content-kanan-atas{
+    width: 100%;
+    align-items: center;
+}
+.content-kanan-atas h1{
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.content-kanan-tengah{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-row1{
+    display: flex;
+    width: 100%;
+    word-break: break-all;
+    align-items: center;
+    justify-content: center;
+}
+.card-row2{
+    display: flex;
+    width: 100%;
+    word-break: break-all;
+    align-items: center;
+    justify-content: center;
+}
+.card1{
+    width: 40%;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    background-color: mediumseagreen;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.card2{
+    width: 40%;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    background-color: salmon;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.card3{
+    width: 40%;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    background-color: coral;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.card4{
+    width: 40%;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    background-color:royalblue;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+.icon i{
+    font-size: 60px;
+    color: white;
+}
+.text{
+    text-align: right;
+}
+.text h1{
+    color: white;
+}
+.text h4{
+    font-size: small;
+    font-weight: lighter;
+    color: white;
+}
+.content-kanan{
+    width: 80%;
+}
+.informasi-wrapper{
+    margin: 50px;
+}
+.informasi-section{
+    display: flex;
+    justify-content: space-between;
+}
+.informasi-kiri{
+    width: 48%;
+}
+.informasi-kanan{
+    width: 48%;
+}
+.informasi{
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #f3f3f3;
+}
+.informasi p{
+    padding-left: 15px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .judul{
+        font-weight: bold;
+        font-size: medium;
+        color: white;
+    }
+    .header-kanan button{
+        font-size: small;
+    }
+    .menu-list button{
+        font-size: 12px;
+        padding-right: 8px;
+    }
+    .card-row1{
+        display: block;
+    }
+    .card-row2{
+        display: block;
+        margin-top: -5px;
+    }
+    .card1{
+        width: 82%;
+    }
+    
+    .card2{
+        width: 82%;
+    }
+    
+    .card3{
+        width: 82%;
+    }
+    
+    .card4{
+        width: 82%;
+    }
+    .informasi-section{
+        display: block;
+    }
+    .informasi-kiri{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .informasi-kanan{
+        width: 100%;
+    }
+}

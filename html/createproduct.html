@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Produk</title>
+    <link rel="stylesheet" href="../css/createproduct.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-kiri">
+            <p class="judul">Sistem Informasi Penjualan</p>
+        </div>
+
+        <div class='console-container'>
+            <span id='text'></span>
+            <div class='console-underscore' id='console'>&#95;</div>
+        </div>
+
+        <div class="header-kanan">
+            <button class="dropdown-button">Administrator</button>
+            <div class="dropdown-content">
+                <a href="../html/index.html">Keluar</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content-kiri">
+            <div class="menu-list">
+                <li><a href="../html/home.html"><button>Dashboard</button></a></li>
+                <li><a href="../html/managementdata.html"><button>Management Data</button></a></li>
+                <li><a href="../html/aboutus.html"><button>Tentang Kami</button></a></li>
+                <li><a href="../html/contactus.html"><button>Kontak</button></a></li>
+            </div>
+        </div>
+
+        <div class="content-kanan">
+            <div class="form-wrapper">
+                <h1>Tambah Produk</h1><br>
+                <br><br>
+    
+                <form id="formId">
+
+                    <label for="" class="label">ID Produk</label><br>
+                    <input type="text" class="input" placeholder="Input ID Produk" id="noProdukId">
+
+                    <br><br>
+
+                    <label for="" class="label">Nama Produk</label><br>
+                    <input type="text" class="input" placeholder="Input Nama Produk" id="namaProdukId">
+
+                    <br><br>
+
+                    <label for="" class="label">Stock</label><br>
+                    <input type="number" class="input" placeholder="Input Stock" id="stockId">
+
+                    <br><br>
+
+                    <label for="" class="label">Tanggal</label><br>
+                    <input type="date" class="input" placeholder="" id="tanggalId">
+
+                    <br><br>
+
+                    <label for="" class="label">Dibuat Oleh</label><br>
+                    <input type="text" class="input" placeholder="Input Nama Admin" id="adminId">
+
+
+                    <br><br><br>
+            
+                    <div class="button">
+                        <input type="submit" class="submitBtn" value="Simpan">
+                    </div>
+                </form>
+                <a href="../html/managementdata.html" class="backButton"><button>Kembali</button></a>
+            </div>
+        </div>
+
+        <button class="scroll-button">
+            <i class="fa-solid fa-circle-up"></i>
+        </button>
+    
+</body>
+<script src="../js/home.js"></script>
+<script src="../js/createproduk.js"></script>
+<script src="../js/JQuery.js"></script>
+</html>

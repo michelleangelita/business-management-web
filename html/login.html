@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+</head>
+<body>
+    <div class="header">
+        <div class="header-kiri">
+            <p class="judul">Sistem Informasi Penjualan</p>
+        </div>
+
+        <div class='console-container'>
+            <span id='text'></span>
+            <div class='console-underscore' id='console'>&#95;</div>
+        </div>
+
+        <div class="header-kanan">
+            <a href="../html/login.html"><button class="masukBtn">Masuk</button></a>
+            <a href="../html/register.html"><button class="daftarBtn">Daftar</button></a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="form-wrapper">
+            <h1>Masuk</h1>
+
+            <br><br>
+
+            <form id="formId">
+                     
+                <label for="" class="label">Email</label><br>
+                <input type="email" class="input" placeholder="Masukkan email Anda" id="emailId">
+        
+                <br><br>
+        
+                <label for="" class="label">Password</label><br>
+                <input type="password" class="input" placeholder="Masukkan password Anda" id="passwordId">
+        
+                <br><br><br>
+                <div class="forget">
+                    <a href="../html/forgetinputemail.html">Lupa Password?</a>
+                </div>
+
+                <br>
+                <div class="button">
+                    <input type="submit" class="submitBtn" value="Masuk">
+                </div>
+            </form>
+
+            <div class="content-bottom">
+                <h4>Belum Memiliki Akun? <a href="../html/register.html"><b>Daftar</b></a></h4>
+            </div>
+        </div>
+    </div>
+
+    <button class="scroll-button">
+        <i class="fa-solid fa-circle-up"></i>
+    </button>
+</body>
+<script src="../js/login.js"></script>
+<script src="../js/home.js"></script>
+<script src="../js/JQuery.js"></script>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management Data</title>
+    <link rel="stylesheet" href="../css/managementdata.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-kiri">
+            <p class="judul">Sistem Informasi Penjualan</p>
+        </div>
+
+        <div class='console-container'>
+            <span id='text'></span>
+            <div class='console-underscore' id='console'>&#95;</div>
+        </div>
+
+        <div class="header-kanan">
+            <button class="dropdown-button">Administrator</button>
+            <div class="dropdown-content">
+                <a href="../html/index.html">Keluar</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content-kiri">
+            <div class="menu-list">
+                <li><a href="../html/home.html"><button>Dashboard</button></a></li>
+                <li><a href="../html/managementdata.html"><button>Management Data</button></a></li>
+                <li><a href="../html/aboutus.html"><button>Tentang Kami</button></a></li>
+                <li><a href="../html/contactus.html"><button>Kontak</button></a></li>
+            </div>
+        </div>
+
+        <div class="content-kanan">
+            <div class="table-wrapper">
+                <h1>Management Data Produk</h1>
+                <br><br>
+                
+                <div class="menu">
+                    <div class="addButton">
+                        <a href="../html/createproduct.html"><button><i class="fa-solid fa-plus"></i> Tambah Produk</button></a>
+                    </div>
+                    <br> <br>
+                    <div class="search">
+                        <input type="text" name="searchBar" id="searchId" onkeyup="searchFunction()" placeholder="Cari ID Produk...">
+                    </div>
+                </div>
+                
+                <br><br>
+
+                <div class="table">
+                    <table id="tableProduk">
+                        <tr>
+                            <th class="clickAble" onclick="sortNumber(0)"><i class="fa-solid fa-sort"></i><b> ID Produk</b></td>
+                            <th class="clickAble" onclick="sortAlphabet(1)"><i class="fa-solid fa-sort"></i><b> Nama Produk</b></td>
+                            <th class="clickAble" onclick="sortNumber(2)"><i class="fa-solid fa-sort"></i><b> Stock</b></td>
+                            <th class="clickAble" onclick="sortNumber(3)"><i class="fa-solid fa-sort"></i><b> Tanggal</b></td>
+                            <th class="clickAble" onclick="sortAlphabet(4)"><i class="fa-solid fa-sort"></i><b> Dibuat Oleh</b></td>
+                            <th class="clickAble"><b>Action</b></td>
+                        </tr>
+                        <tr>
+                            <td>010</td>
+                            <td>Chiki Snack Net Potato Barbecue 65G</td>
+                            <td>100</td>
+                            <td>30 Juni 2022</td>
+                            <td>Christina Gunawan</td>
+                            <td>
+                                <div class="actionButton">
+                                    <button>Detail</button>
+                                    <button>Update</button>
+                                    <input type="button" value="Delete" onclick="deleteRow(this)">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>009</td>
+                            <td>ABC Kecap Manis 650G</td>
+                            <td>50</td>
+                            <td>29 Juni 2022</td>
+                            <td>Amelia Chandra</td>
+                            <td>
+                                <div class="actionButton">
+                                    <button>Detail</button>
+                                    <button>Update</button>
+                                    <button>Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>008</td>
+                            <td>Frestea Minuman Teh 350ML</td>
+                            <td>35</td>
+                            <td>28 Juni 2022</td>
+                            <td>Felix William</td>
+                            <td>
+                                <div class="actionButton">
+                                    <button>Detail</button>
+                                    <button>Update</button>
+                                    <button>Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>007</td>
+                            <td>Dancow Fortigo Susu Bubuk 400G</td>
+                            <td>50</td>
+                            <td>27 Juni 2022</td>
+                            <td>Chandra Bunawan</td>
+                            <td>
+                                <div class="actionButton">
+                                    <button>Detail</button>
+                                    <button>Update</button>
+                                    <button>Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>006</td>
+                            <td>Indomie Mi Instan Goreng 85G</td>
+                            <td>550</td>
+                            <td>26 Juni 2022</td>
+                            <td>Vannessa Yuliana</td>
+                            <td>
+                                <div class="actionButton">
+                                    <button>Detail</button>
+                                    <button>Update</button>
+                                    <button>Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>005</td>
+                            <td>Pocari Sweat 2000ML</td>
+                            <td>95</td>
+                            <td>28 Juni 2022</td>
+                            <td>Ghania Lim</td>
+                            <td>
+                                <div class="actionButton">
+                                    <button>Detail</button>
+                                    <button>Update</button>
+                                    <button>Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>004</td>
+                            <td>Samyang Buldak Ramen 140G</td>
+                            <td>78</td>
+                            <td>27 Juni 2022</td>
+                            <td>George Salim</td>
+                            <td>
+                                <div class="actionButton">
+                                    <button>Detail</button>
+                                    <button>Update</button>
+                                    <button>Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>003</td>
+                            <td>Aice Ice Cream Mango</td>
+                            <td>43</td>
+                            <td>26 Juni 2022</td>
+                            <td>David Nathanael</td>
+                            <td>
+                                <div class="actionButton">
+                                    <button>Detail</button>
+                                    <button>Update</button>
+                                    <button>Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>Tolak Angin Kotak 5 Pcs</td>
+                            <td>100</td>
+                            <td>25 Juni 2022</td>
+                            <td>Nicholas Pratama</td>
+                            <td>
+                                <div class="actionButton">
+                                    <button>Detail</button>
+                                    <button>Update</button>
+                                    <button>Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>001</td>
+                            <td>Cimory Yoghurt Squeeze 120G</td>
+                            <td>2</td>
+                            <td>24 Juni 2022</td>
+                            <td>Angel Kurniawan</td>
+                            <td>
+                                <div class="actionButton">
+                                    <button>Detail</button>
+                                    <button>Update</button>
+                                    <button>Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="scroll-button">
+        <i class="fa-solid fa-circle-up"></i>
+    </button>
+</body>
+<script src="../js/home.js"></script>
+<script src="../js/managementdata.js"></script>
+<script src="../js/JQuery.js"></script>
+</html>
